@@ -54,11 +54,11 @@ class SpotifyApp(tk.Tk):
         self.minsize(820, 690)
         self.configure(bg="#121212")
 
-        self._album_art_cache = {}  # url -> ImageTk.PhotoImage
+        self._album_art_cache = {}
         self._current_track_id = None
         self._current_album_url = None
         self._is_playing = False
-        self._loaded_playlist_ids = set()  # playlists whose tracks are already loaded
+        self._loaded_playlist_ids = set()
 
         self._build_style()
 
