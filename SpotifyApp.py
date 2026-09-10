@@ -30,11 +30,9 @@ ALBUM_ART_SIZE = 260
 
 
 def make_spotify_client() -> spotipy.Spotify:
-    if "YOUR_CLIENT_ID_HERE" in CLIENT_ID or "YOUR_CLIENT_SECRET_HERE" in CLIENT_SECRET:
+    if "XXX" in CLIENT_ID or "XXX" in CLIENT_SECRET:
         raise RuntimeError(
-            "Spotify credentials are not set. Fill in CLIENT_ID / CLIENT_SECRET "
-            "at the top of the script, or set SPOTIPY_CLIENT_ID / "
-            "SPOTIPY_CLIENT_SECRET environment variables."
+            "Fill in credentials"
         )
     auth_manager = SpotifyOAuth(
         client_id=CLIENT_ID,
