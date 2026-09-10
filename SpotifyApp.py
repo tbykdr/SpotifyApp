@@ -7,7 +7,6 @@ from tkinter import ttk, messagebox
 
 import requests
 import spotipy
-import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from PIL import Image, ImageTk
 
